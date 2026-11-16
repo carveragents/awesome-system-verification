@@ -32,7 +32,8 @@ Maintained by [Carver Agents](https://carveragents.ai) and [Testfold](https://te
 
 - [The Lethal Trifecta for AI Agents](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) - Simon Willison on private data + untrusted content + external communication.
 - [Prompt Injection series](https://simonwillison.net/series/prompt-injection/) - Simon Willison's running catalog of agent attack patterns.
-- [How Amazon Web Services Uses Formal Methods](https://cacm.acm.org/research/how-amazon-web-services-uses-formal-methods/) - CACM paper on TLA+ at AWS.
+- [How Amazon Web Services Uses Formal Methods](https://cacm.acm.org/magazines/2015/4/184701-how-amazon-web-services-uses-formal-methods/fulltext) - CACM 2015 paper on TLA+ at AWS.
+- [Systems Correctness Practices at AWS](https://cacm.acm.org/practice/systems-correctness-practices-at-amazon-web-services) - Marc Brooker and Ankush Desai on AWS's formal and semi-formal methods portfolio, a decade later.
 - [Use of Formal Methods at Amazon Web Services](https://lamport.azurewebsites.net/tla/formal-methods-amazon.pdf) - Original AWS formal methods report (PDF).
 - [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) - Anthropic on agent architectures and where checks belong.
 - [Hillel Wayne's blog](https://www.hillelwayne.com/) - Practical essays on formal methods and testing.
@@ -81,7 +82,8 @@ Maintained by [Carver Agents](https://carveragents.ai) and [Testfold](https://te
 ## Deterministic Simulation Testing
 
 - [Antithesis](https://antithesis.com/) - Autonomous deterministic simulation testing platform.
-- [Testing Distributed Systems w/ Deterministic Simulation](https://www.youtube.com/watch?v=4fFDFbi3toc) - Will Wilson's classic FoundationDB talk (Strange Loop).
+- [Testing Distributed Systems w/ Deterministic Simulation](https://thestrangeloop.com/2014/testing-distributed-systems-w-slash-deterministic-simulation.html) - Will Wilson's classic FoundationDB talk (Strange Loop 2014).
+- [What's the big deal about Deterministic Simulation Testing?](https://notes.eatonphil.com/2024-08-20-deterministic-simulation-testing.html) - Phil Eaton's accessible introduction.
 - [TigerBeetle VOPR](https://github.com/tigerbeetle/tigerbeetle) - Simulation-tested financial database.
 - [madsim](https://github.com/madsim-rs/madsim) - Deterministic simulator for Rust distributed systems.
 
@@ -111,7 +113,7 @@ Maintained by [Carver Agents](https://carveragents.ai) and [Testfold](https://te
 ## Runtime Verification and Observability
 
 - [OpenTelemetry](https://opentelemetry.io/) - Vendor-neutral traces, metrics and logs.
-- [OpenTelemetry GenAI semantic conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/) - Standard telemetry for LLM and agent calls.
+- [OpenTelemetry GenAI semantic conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/) - Standard telemetry for LLM and agent calls ([repo](https://github.com/open-telemetry/semantic-conventions-genai)).
 - [Open Policy Agent](https://www.openpolicyagent.org/) - Policy-as-code engine for runtime authorization.
 - [Cedar](https://www.cedarpolicy.com/) - Verifiable authorization policy language from AWS.
 - [Langfuse](https://github.com/langfuse/langfuse) - Open source LLM tracing and evals.
@@ -128,16 +130,19 @@ Maintained by [Carver Agents](https://carveragents.ai) and [Testfold](https://te
 - [tau-bench](https://github.com/sierra-research/tau-bench) - Tool-agent-user interaction benchmark.
 - [Terminal-Bench](https://www.tbench.ai/) - Benchmark for agents in terminal environments.
 - [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) - Anthropic engineering guide.
+- [Deterministic simulation testing guide](https://antithesis.com/resources/deterministic_simulation_testing/) - Antithesis explainer on how DST works and when to use it.
 
 ## AI Agent Security and Guardrails
 
 - [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) - Canonical LLM risk list.
+- [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/) - Peer-reviewed risk taxonomy (ASI01-ASI10) for agents that plan, call tools and act.
+- [Keycard](https://keycard.ai/) - Runtime, task-scoped authorization and identity for agents.
 - [MITRE ATLAS](https://atlas.mitre.org/) - Adversarial threat landscape for AI systems.
 - [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) - Programmable guardrails for LLM apps.
 - [Guardrails AI](https://github.com/guardrails-ai/guardrails) - Input/output validation for LLMs.
 - [garak](https://github.com/NVIDIA/garak) - LLM vulnerability scanner.
 - [PyRIT](https://github.com/Azure/PyRIT) - Microsoft's red-teaming toolkit for generative AI.
-- [CaMeL: Defeating Prompt Injections by Design](https://arxiv.org/abs/2503.18813) - Google DeepMind capability-based agent security.
+- [CaMeL: Defeating Prompt Injections by Design](https://arxiv.org/abs/2503.18813) - Google DeepMind capability-based agent security ([code](https://github.com/google-research/camel-prompt-injection)).
 - [Model Context Protocol](https://modelcontextprotocol.io/) - Standard for agent-tool connections, including authorization.
 
 ## Verifying AI-Generated Code
@@ -146,6 +151,8 @@ Maintained by [Carver Agents](https://carveragents.ai) and [Testfold](https://te
 - [Semgrep](https://github.com/semgrep/semgrep) - Lightweight static analysis with custom rules.
 - [CodeQL](https://codeql.github.com/) - Semantic code analysis engine.
 - [Testfold](https://testfold.ai) - Verification-first testing for AI-built software.
+- [A benchmark for vericoding](https://popl26.sigplan.org/details/dafny-2026-papers/13/A-benchmark-for-vericoding-formally-verified-program-synthesis) - POPL 2026: generating formally verified code from specs in Lean, Verus and Dafny.
+- [AlgoVeri](https://arxiv.org/abs/2602.09464) - Aligned vericoding benchmark of classical algorithms across Dafny, Verus and Lean.
 - [Software Engineering at Google: Testing](https://abseil.io/resources/swe-book/html/ch11.html) - Free book chapters on testing at scale.
 
 ## Regulatory and Compliance Verification
@@ -161,17 +168,30 @@ Maintained by [Carver Agents](https://carveragents.ai) and [Testfold](https://te
 
 - [DO-178C overview](https://en.wikipedia.org/wiki/DO-178C) - Avionics software assurance standard.
 - [ISO 26262](https://www.iso.org/standard/68383.html) - Automotive functional safety.
-- [UL 4600](https://ul.org/research-updates/ul-4600-standard-safety-evaluation-autonomous-products/) - Safety standard for autonomous products.
+- [UL 4600](https://ul.org/UL4600) - Safety-case standard for autonomous products.
 - [NASA Software Engineering Handbook](https://swehb.nasa.gov/) - NASA's verification and validation practices.
-- [Engineering a Safer World (STAMP/STPA)](https://mitpress.mit.edu/9780262533690/engineering-a-safer-world/) - Nancy Leveson's systems safety approach.
+- [Engineering a Safer World (STAMP/STPA)](https://library.oapen.org/handle/20.500.12657/26043) - Nancy Leveson's systems safety approach (free, open access).
 
 ## Talks and Presentations
 
-- [AI Engineer YouTube channel](https://www.youtube.com/@aiDotEngineer) - Keynotes on agents, evals and software factories (Two Sigma, Sonar, Keycard, Ramp, Modal, Cognition, Capital One and more).
-- [Strange Loop archive](https://www.youtube.com/@StrangeLoopConf) - Many classic testing and verification talks.
-- [Jepsen talks](https://jepsen.io/talks) - Kyle Kingsbury's conference talks.
-- [Leslie Lamport: Thinking Above the Code](https://www.youtube.com/watch?v=-4Yp3j_jk8Q) - Why specify before you code.
-- [John Hughes: Testing the Hard Stuff and Staying Sane](https://www.youtube.com/watch?v=zi0rHwfiX1Q) - Property-based testing in industry.
+### Agent and AI-code verification
+
+- [In the Land of AI Agents, the Verifiers Are King](https://ai.engineer/talks/in-the-land-of-ai-agents-the-verifiers-are-king) - Tariq Shaukat (Sonar), AI Engineer World's Fair 2026. Verification, not generation, is the bottleneck.
+- [What a $900M Bank Error Teaches Us About AI Agents](https://www.youtube.com/watch?v=iniryju23Sk) - John Feminella (Two Sigma), AI Engineer NYC 2026. Five composable controls; "cars have brakes so you can go fast."
+- [It's 10pm. Do You Know Where Your Agents Are?](https://ai.engineer/talks/it-s-10pm-do-you-know-where-your-agents-are) - Kim Maida (Keycard), AI Engineer World's Fair 2026. Task-scoped credentials via token exchange.
+- [How to Secure Agents using OAuth](https://ai.engineer/talks/how-to-secure-agents-using-oauth) - Jared Hanson (Keycard), AI Engineer World's Fair 2025.
+- [Why Software Factories Fail](https://ai.engineer/talks/harness-engineering-is-not-enough-why-software-factories-fail) - Dex Horthy (HumanLayer), AI Engineer World's Fair 2026.
+- [The Great Loops Debate](https://ai.engineer/talks/the-great-loops-debate-dex-horthy-geoff-huntley-ian-livingstone-greg-pstrucha-moderated-by-allie) - Oxford-style debate on agent loops, verification and agentic back pressure.
+- [Developer Experience in the Age of AI Coding Agents](https://ai.engineer/talks/developer-experience-in-the-age-of-ai-coding-agents) - Max Kanat-Alexander (Capital One), AI Engineer Code 2025.
+- [Vision: Zero Bugs](https://ai.engineer/talks/vision-zero-bugs) - Johann Schleier-Smith (Temporal) on AI making high-assurance engineering practical.
+- [AI Engineer YouTube channel](https://www.youtube.com/@aidotengineer) - Full archive of AI Engineer conference talks.
+
+### Classic verification talks
+
+- [Thinking Above the Code](https://www.microsoft.com/en-us/research/video/thinking-above-the-code/) - Leslie Lamport, Microsoft Research Faculty Summit 2014.
+- [Testing the Hard Stuff and Staying Sane](https://www.infoq.com/presentations/testing-techniques-case-study) - John Hughes on property-based testing at Ericsson, Klarna and Volvo.
+- [Testing Distributed Systems w/ Deterministic Simulation](https://thestrangeloop.com/2014/testing-distributed-systems-w-slash-deterministic-simulation.html) - Will Wilson, Strange Loop 2014.
+- [Jepsen talks](https://jepsen.io/talks) - Kyle Kingsbury's conference talks on distributed systems safety.
 
 ## Books
 

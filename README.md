@@ -151,6 +151,7 @@ Maintained by [Carver Agents](https://carveragents.ai) and [Testfold](https://te
 - [Semgrep](https://github.com/semgrep/semgrep) - Lightweight static analysis with custom rules.
 - [CodeQL](https://codeql.github.com/) - Semantic code analysis engine.
 - [Testfold](https://testfold.ai) - Verification-first testing for AI-built software.
+- [SPARDA](https://github.com/zakariagharzouli/sparda) - Behavioural verification engine for backends: compiles declared routes, mutations, guards, effects and constraints into a deterministic graph, then evaluates verification obligations on it. Runs offline, with a CLI and an MCP runtime.
 - [A benchmark for vericoding](https://popl26.sigplan.org/details/dafny-2026-papers/13/A-benchmark-for-vericoding-formally-verified-program-synthesis) - POPL 2026: generating formally verified code from specs in Lean, Verus and Dafny.
 - [AlgoVeri](https://arxiv.org/abs/2602.09464) - Aligned vericoding benchmark of classical algorithms across Dafny, Verus and Lean.
 - [Software Engineering at Google: Testing](https://abseil.io/resources/swe-book/html/ch11.html) - Free book chapters on testing at scale.
